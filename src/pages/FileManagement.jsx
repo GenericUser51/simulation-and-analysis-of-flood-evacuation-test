@@ -1,8 +1,16 @@
-function FileManagement() {
+import { SidebarProvider, SidebarTrigger } from "../components/ui/sidebar";
+import { AppSidebar } from "../components/app-sidebar";
+
+function FileManagement({ children }) {
   return (
     <div>
-      <h1>File Management</h1>
-      <p>This is the File Management page.</p>
+      <SidebarProvider>
+        <AppSidebar />
+        <main>
+          <SidebarTrigger />
+          {children}
+        </main>
+      </SidebarProvider>
     </div>
   );
 }
