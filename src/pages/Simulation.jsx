@@ -44,8 +44,15 @@ export default function Simulation() {
                   />
                   <Waypoints
                     size={40}
+<<<<<<< HEAD
                     onClick={() => setPanel("evacuation")}
                     className="cursor-pointer rounded-sm p-2 hover:bg-neutral-800"
+=======
+                    onClick={() => {
+                      setPanel("evacuation");
+                    }}
+                    className={`cursor-pointer rounded-sm p-2 hover:bg-neutral-800 ${panel === "evacuation" ? "bg-neutral-700" : ""}`}
+>>>>>>> origin/main
                   />
                   <House
                     size={40}
@@ -59,8 +66,15 @@ export default function Simulation() {
                   />
                   <TriangleAlert
                     size={40}
+<<<<<<< HEAD
                     onClick={() => setPanel("hazards")}
                     className="cursor-pointer rounded-sm p-2 hover:bg-neutral-800"
+=======
+                    onClick={() => {
+                      setPanel("hazards");
+                    }}
+                    className={`cursor-pointer rounded-sm p-2 hover:bg-neutral-800 ${panel === "hazards" ? "bg-neutral-700" : ""}`}
+>>>>>>> origin/main
                   />
                 </SidebarGroup>
               </div>
