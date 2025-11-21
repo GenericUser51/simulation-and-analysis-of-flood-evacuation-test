@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import { SidebarProvider, SidebarTrigger } from "../components/ui/sidebar";
 import { AppSidebar } from "../components/app-sidebar";
 import File from "../components/File";
@@ -59,6 +60,8 @@ function FileManagement({ children }) {
       </SidebarProvider>
     </div>
   );
+=======
+export default function FileManagement({ children }) {
+  return <div></div>;
+>>>>>>> 33e8426b0b8a24f00360282ac0b898a9fb1fd463
 }
-
-export default FileManagement;
