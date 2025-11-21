@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import {
   SidebarContent,
   SidebarGroup,
@@ -196,8 +195,4 @@ export default function FileManagement() {
       </SidebarProvider>
     </div>
   );
-=======
-export default function FileManagement() {
-  return <div></div>;
->>>>>>> refs/remotes/origin/main
 }
