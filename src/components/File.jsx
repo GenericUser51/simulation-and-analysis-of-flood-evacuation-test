@@ -22,28 +22,24 @@ const items = [
 
 export default function File() {
   return (
-    <div className="max-h-28 flex-1">
-      <Card>
-        <CardHeader className="">
-          <CardTitle>
-            <div className="flex justify-between">
-              <text className="text-lg">File Name</text>
-              <button className="rounded-full" size="icon"></button>
-              <Settings2 />
-            </div>
-          </CardTitle>
-          <div>
-            <CardDescription>File ID: #####</CardDescription>
-            <CardDescription>Date Created: #####</CardDescription>
-          </div>
-        </CardHeader>
-        <CardContent className="flex justify-center">
-          <button className="h-8 w-full bg-black text-white">Run</button>
-          <button className="h-8 w-full underline underline-offset-2">
-            Delete
-          </button>
-        </CardContent>
-      </Card>
+    <div className="flex h-fit flex-col gap-4 rounded-md border border-b px-8 py-4">
+      <div className="flex items-center">
+        <CardTitle> File Name: ###########</CardTitle>
+        <Button variant="ghost" size="icon" className="ml-auto">
+          <Settings2 />
+        </Button>
+      </div>
+      <div className="flex flex-col gap-1">
+        <CardDescription>ID: ###########</CardDescription>
+        <CardDescription>Created: ##/##/####</CardDescription>
+      </div>
+      <div className="flex gap-2">
+        <Button variant="outline">Run</Button>
+        <Button variant="outline">Export</Button>
+        <Button variant="destructive" className="ml-auto">
+          Delete
+        </Button>
+      </div>
     </div>
   );
 }
