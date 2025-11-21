@@ -1,6 +1,6 @@
 export default function SimulationOverview() {
   return (
-    <div className="border-border h-full border-r p-4 pt-12">
+    <div className="h-full p-4 pt-12">
       <h2 className="mb-8 text-4xl font-semibold">Overview</h2>
       <div className="flex flex-col gap-4">
         <div className="flex gap-4">
