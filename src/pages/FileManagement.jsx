@@ -115,7 +115,7 @@ export default function FileManagement() {
               <Textarea
                 placeholder="fileNameExample.jsx"
                 id="FileName"
-                className="w-100% h-0 resize-none rounded-md"
+                className="w-full rounded-md"
               />
             </div>
             <Dialog>
