@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/sidebar";
 
 import {
+<<<<<<< HEAD
   LifeBuoy,
   LayoutGrid,
   Waypoints,
@@ -17,6 +18,8 @@ import {
 } from "lucide-react";
 
 import {
+=======
+>>>>>>> origin
   Dialog,
   DialogContent,
   DialogDescription,
@@ -41,6 +44,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
+<<<<<<< HEAD
 import File from "@/components/File";
 import FilePagination from "@/components/FilePagination";
 import { useState } from "react";
@@ -106,11 +110,42 @@ export default function FileManagement() {
                 <Settings absoluteStrokeWidth={true} />
               </SidebarGroup>
             </div>
+=======
+import {
+  Pagination,
+  PaginationContent,
+  PaginationEllipsis,
+  PaginationItem,
+  PaginationLink,
+  PaginationNext,
+  PaginationPrevious,
+} from "@/components/ui/pagination";
+
+import File from "@/components/File";
+import FilePagination from "@/components/FilePagination";
+import { Button } from "@/components/ui/button";
+import { Textarea } from "@/components/ui/textarea";
+import { Label } from "react-aria-components";
+import { Settings2, FilePlus, FileChartColumn, Search } from "lucide-react";
+
+export default function FileManagement() {
+  return (
+    <div>
+      <SidebarProvider>
+        <Sidebar className="w-fit">
+          <SidebarContent className="px-4 py-10">
+            <SidebarGroup>
+              <h2>Hello</h2>
+              <h2>Hello</h2>
+              <h2>Hello</h2>
+            </SidebarGroup>
+>>>>>>> origin
           </SidebarContent>
         </Sidebar>
 
         <main className="flex h-full w-full flex-col">
           <div className="border-border flex h-16 items-center justify-between border-b px-4">
+<<<<<<< HEAD
             <div>
               <Textarea
                 placeholder="fileNameExample.jsx"
@@ -118,6 +153,10 @@ export default function FileManagement() {
                 className="w-full rounded-md"
               />
             </div>
+=======
+            <Textarea></Textarea>
+
+>>>>>>> origin
             <Dialog>
               <DialogTrigger asChild>
                 <Button variant="outline">Create</Button>
@@ -222,8 +261,13 @@ export default function FileManagement() {
                 className="flex h-20 w-60 flex-col items-start pl-4"
                 variant="outline"
               >
+<<<<<<< HEAD
                 <FileChartColumn />
                 <h1>Export File</h1>
+=======
+                <FilePlus />
+                <h1>Export</h1>
+>>>>>>> origin
               </Button>
               <Button
                 className="flex h-20 w-60 flex-col items-start pl-4"
@@ -243,9 +287,13 @@ export default function FileManagement() {
             <File />
             <File />
           </div>
+<<<<<<< HEAD
           <div className="m-4">
             <FilePagination></FilePagination>
           </div>
+=======
+          <div></div>
+>>>>>>> origin
         </main>
       </SidebarProvider>
     </div>

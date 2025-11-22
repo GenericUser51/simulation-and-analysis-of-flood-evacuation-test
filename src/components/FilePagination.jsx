@@ -8,6 +8,8 @@ import {
   PaginationPrevious,
 } from "@/components/ui/pagination";
 
+import { Pagination } from "./ui/pagination";
+
 export default function FilePagination() {
   return (
     <div>
