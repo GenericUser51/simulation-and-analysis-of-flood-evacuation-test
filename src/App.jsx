@@ -9,8 +9,8 @@ const router = createHashRouter([
     Component: Simulation,
   },
   {
-    path: "/FileManagement",
-    Component: FileManagement,
+    path: "/Simulation",
+    Component: Simulation,
   },
 ]);
 
